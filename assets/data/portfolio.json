@@ -1,0 +1,394 @@
+[
+    {
+      "id": "web-scraping",
+      "title": "Competitive Price Intelligence-Web Scraping",
+      "thumb": "assets/img/portfolio/portfolio1/portfolio-1.webp",
+      "categories": ["filter-software-dev"],
+      "shortDesc": "Proxy rotation + BeautifulSoup para extraer 100k registros sin bloqueos.",
+      
+      "subtitle": "Rotating proxies & UA spoofing to harvest IMDb at scale",
+      "images": [
+        "assets/img/portfolio/portfolio1/portfolio-1.webp",
+        "assets/img/portfolio/portfolio1/portfolio-2.webp",
+        "assets/img/portfolio/portfolio1/portfolio-3.webp",
+        "assets/img/portfolio/portfolio1/portfolio-4.webp"
+      ],
+      "info": {
+        "Category": "Web Scraping & Data Extraction",
+        "Client": "Anonymous",
+        "Date": "March 2024",
+        "URL": "https://github.com/jruiz999-mechatronic/scrapingProyect"
+      },
+        "challenge": "The pricing team lacked real-time visibility into competitor prices and promotions, leading to delayed adjustments in our offering and missed sales opportunities.",
+        "solution": "We rolled out an automated competitor pricing intelligence platform that delivers daily market insights and actionable recommendations through an intuitive dashboard, empowering the pricing team to adjust prices in real time, respond swiftly to competitor promotions, and maximize revenue without manual effort.",
+        "results": [
+            "+20% increase in visitor-to-buyer conversion rate",
+            "+150,000 USD incremental revenue in the first quarter post-implementation",
+            "−80% reduction in manual price monitoring time (from 40 h/week to 8 h/week)",
+            "100% daily coverage of key competitor prices"
+        ],
+      "demos": [
+        { "label": "GitHubExample", "url": "https://github.com/jruiz999-mechatronic/scrapingProyect?tab=readme-ov-file" },
+        { "label": "Excel Revenue Example", "url": "assets/data/webscraping_demo.xlsx" }
+      ],
+      "overview": "Esta solución combina proxies rotativos y rotación de user agents en Python para extraer datos de películas sin bloqueos ni captchas.",
+      "features": [
+        "Rotación de proxies para anonimato",
+        "Spoofing de User-Agents para simular tráfico real",
+        "Extracción estructurada a JSON listo para APIs"
+      ],
+      "applications": [
+        "Recomendaciones de entretenimiento en tiempo real",
+        "Análisis de mercado y precios de competidores",
+        "Automatización de agregación de productos y reseñas"
+      ]
+    },
+    {
+        "id": "disbursement-api",
+        "title": "Disbursement API – Instant Fund Release",
+        "thumb": "assets/img/portfolio/portfolio2/disbursement-api-1.webp",
+        "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch"],
+        "shortDesc": "RESTful API enabled $16 M monthly disbursement volume with 99.9% uptime.",
+        "subtitle": "High-availability disbursement API for seamless credit funding",
+        "images": [
+          "assets/img/portfolio/portfolio2/disbursement-api-3.webp",
+          "assets/img/portfolio/portfolio2/disbursement-api-1.webp",
+          "assets/img/portfolio/portfolio2/disbursement-api-2.webp"
+        ],
+        "info": {
+          "Category": "API Development / FinTech",
+          "Client": "Anonymous",
+          "Date": "May 2024",
+          "URL": "https://example.com/docs/disbursement-api"
+        },
+        "challenge": "Manual fund-release processes caused delays up to 48 hours, high operational costs, and customer dissatisfaction.",
+        "solution": "We built a scalable RESTful Disbursement API that automates end-to-end fund transfers upon credit approval, offering real-time processing, status callbacks, and full audit trails.",
+        "results": [
+          "16 000 000 USD monthly disbursement volume",
+          "99.9% API uptime",
+          "processing time (48 h → under 2 m)",
+          "−80% manual intervention cases"
+        ],
+        "demos": [
+          { "label": "Disbursement Demo Excel", "url": "assets/data/disbursement_demo.xlsx" }
+        ],
+        "overview": "This microservice handles secure, idempotent fund disbursements via REST endpoints, with real-time tracking and SLA-backed availability.",
+        "features": [
+          "Scalable RESTful endpoints for instant payouts",
+          "Idempotent transaction handling",
+          "Real-time status callbacks",
+          "Comprehensive audit logging"
+        ],
+        "applications": [
+          "Automated credit disbursement",
+          "Integration with banking rails (ACH, SEPA, RTP)",
+          "Real-time transaction monitoring",
+          "Reporting and reconciliation"
+        ]
+    },
+    {
+      "id": "approval-engine",
+      "title": "AI-Powered Approval Engine – Fraud Reduction",
+      "thumb": "assets/img/portfolio/portfolio3/approval-engine-2.webp",
+      "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch", "filter-ai-dev"],
+      "shortDesc": "Machine-learning engine cut fraud by 50% and boosted approval rates by 25%.",
+      "subtitle": "Smart validation engine for risk-aware credit decisions",
+      "images": [
+        "assets/img/portfolio/portfolio3/approval-engine-1.webp",
+        "assets/img/portfolio/portfolio3/approval-engine-2.webp",
+        "assets/img/portfolio/portfolio3/approval-engine-3.webp",
+        "assets/img/portfolio/portfolio3/approval-engine-4.webp"
+      ],
+      "info": {
+        "Category": "AI / Risk Management",
+        "Client": "Anonymous",
+        "Date": "May 2024",
+        "URL": "https://example.com/docs/approval-engine"
+      },
+      "challenge": "Rule-based approvals generated high false-positive rates and missed complex fraud patterns, resulting in revenue leakage and compliance risks.",
+      "solution": "We developed an AI-driven Approval Engine using anomaly detection and pattern recognition to score applications in milliseconds, enabling dynamic risk thresholds and continuous model retraining.",
+      "results": [
+        "−50% fraud incidents detected pre-disbursement",
+        "+25% approval conversion rate",
+        "−40% false-positive rate",
+        "0.5 s average decision latency",
+        "processing time low amount (6 d → under 1 m)",
+        "processing time manually (6 h → under 24 h)"
+      ],
+      "demos": [
+      ],
+      "overview": "This service processes credit applications with real-time AI scoring, balancing risk tolerance with conversion targets and providing explainable decision logs.",
+      "features": [
+        "Real-time ML-based risk scoring",
+        "Adaptive model retraining",
+        "Explainable decision logs",
+        "API-first integration"
+      ],
+      "applications": [
+        "Credit application screening",
+        "Fraud prevention",
+        "Risk analytics",
+        "Regulatory compliance reporting"
+      ]
+    },
+    {
+      "id": "authentication-service",
+      "title": "Secure Authenticator Service – OAuth2 & MFA",
+      "thumb": "assets/img/portfolio/portfolio4/authenticator-1.webp",
+      "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch", "filter-ai-dev"],
+      "shortDesc": "OAuth2 & MFA service achieved 99.5% success rate and 30% reduction in login friction.",
+      "subtitle": "Robust user authentication with multi-factor security",
+      "images": [
+        "assets/img/portfolio/portfolio4/authenticator-1.webp",
+        "assets/img/portfolio/portfolio4/authenticator-2.webp",
+        "assets/img/portfolio/portfolio4/authenticator-3.webp"
+      ],
+      "info": {
+        "Category": "Security / Identity",
+        "Client": "Anonymous",
+        "Date": "May 2024",
+        "URL": "https://example.com/docs/authentication-service"
+      },
+      "challenge": "Basic username/password flows led to login failures, high support load, and security vulnerabilities.",
+      "solution": "We implemented an OAuth2-based Authenticator Service with built-in MFA (SMS & app-based) and JWT token management, delivering secure and frictionless user access.",
+      "results": [
+        "99.5% authentication success rate",
+        "−30% average login time",
+        "100% MFA adoption",
+        "0 security breaches reported"
+      ],
+      "demos": [
+      ],
+      "overview": "This identity service centralizes access control with OAuth2, multi-factor authentication, and role-based permissions, ensuring secure sessions across all applications.",
+      "features": [
+        "OAuth2 authorization code flow",
+        "MFA via SMS & authenticator apps",
+        "JWT issuance & validation",
+        "Role-based access control"
+      ],
+      "applications": [
+        "User login & session management",
+        "API access security",
+        "Single Sign-On (SSO)",
+        "Access auditing"
+      ]
+    },
+    {
+      "id": "digital-credit-product",
+      "title": "Digital Credit Product – End-to-End Lending",
+      "thumb": "assets/img/portfolio/portfolio5/digital-credit-1.webp",
+      "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch"],
+      "shortDesc": "100% digital credit flow delivered $12 M monthly placements with +8% funnel uplift.",
+      "subtitle": "Seamless online credit journey from application to disbursement",
+      "images": [
+        "assets/img/portfolio/portfolio5/digital-credit-1.webp",
+        "assets/img/portfolio/portfolio5/digital-credit-2.webp",
+        "assets/img/portfolio/portfolio5/digital-credit-3.webp",
+        "assets/img/portfolio/portfolio5/digital-credit-4.webp"
+      ],
+      "info": {
+        "Category": "FinTech / Product",
+        "Client": "Anonymous",
+        "Date": "May 2024",
+        "URL": "https://example.com/docs/digital-credit"
+      },
+      "challenge": "Lack of a fully digital credit solution limited customer acquisition and caused high support volume.",
+      "solution": "We launched a customer-centric digital credit product with responsive UI, guided application flow, real-time eligibility checks, and instant fund disbursement.",
+      "results": [
+        "12 000 000 USD monthly credit placements",
+        "+8% conversion funnel increase",
+        "63% placement rate",
+        "−70% support tickets for credit inquiries"
+      ],
+      "demos": [
+      ],
+      "overview": "This end-to-end product guides users through application, approval, and funding with minimal friction, maximizing conversion and user satisfaction.",
+      "features": [
+        "Responsive application UI",
+        "Real-time eligibility & pricing",
+        "Integrated approval & disbursement workflows",
+        "Automated notifications & alerts"
+      ],
+      "applications": [
+        "Personal loan origination",
+        "Buy-now-pay-later integrations",
+        "Digital wallet top-ups",
+        "User engagement analytics"
+      ]
+    },
+    {
+      "id": "industrial-digital-transformation",
+      "title": "Industrial Digital Transformation Initiative",
+      "thumb": "assets/img/portfolio/portfolio6/industrial-dx-1.webp",
+      "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch", "filter-automation"],
+      "shortDesc": "Smart factory rollout boosted output by 15% and cut downtime by 30%.",
+      "subtitle": "End-to-end smart factory platform for Industry 4.0",
+      "images": [
+        "assets/img/portfolio/portfolio6/industrial-dx-1.webp",
+        "assets/img/portfolio/portfolio6/industrial-dx-2.webp",
+        "assets/img/portfolio/portfolio6/industrial-dx-3.webp",
+        "assets/img/portfolio/portfolio6/industrial-dx-4.webp"
+      ],
+      "info": {
+        "Category": "Industrial / Digital Transformation",
+        "Client": "Anonymous Manufacturing Co.",
+        "Date": "April 2024",
+        "URL": "https://example.com/docs/industrial-dx"
+      },
+      "challenge": "Legacy production lines suffered frequent unplanned stops, manual quality checks, and lacked real-time visibility into OEE.",
+      "solution": "We deployed an end-to-end Industry 4.0 platform: networked sensors, edge gateways, a central MES dashboard and predictive analytics, enabling automated adjustments, real-time monitoring and remote operator alerts.",
+      "results": [
+        "+15% overall equipment effectiveness (OEE)",
+        "−30% unplanned downtime",
+        "−25% quality rework rate",
+        "+12% throughput per shift"
+      ],
+      "demos": [
+      ],
+      "overview": "This solution integrates IoT sensors on machines, edge-based data processing and a cloud-powered dashboard to transform factory performance in real time.",
+      "features": [
+        "Machine-level IoT telemetry",
+        "Edge analytics for anomaly detection",
+        "Cloud MES with KPI visualization",
+        "Automated alerting & remote control"
+      ],
+      "applications": [
+        "Predictive maintenance",
+        "Real-time production monitoring",
+        "Quality control automation",
+        "Energy consumption optimization"
+      ]
+    },
+    {
+      "id": "agro-industrial-robotics",
+      "title": "Agro-Industrial Robotics Platform",
+      "thumb": "assets/img/portfolio/portfolio7/agro-robotics-1.webp",
+      "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch", "filter-robotics"],
+      "shortDesc": "Autonomous harvesters increased yield by 20% and reduced labor costs by 40%.",
+      "subtitle": "Automated field robotics for precision agriculture",
+      "images": [
+        "assets/img/portfolio/portfolio7/agro-robotics-1.webp",
+        "assets/img/portfolio/portfolio7/agro-robotics-2.webp",
+        "assets/img/portfolio/portfolio7/agro-robotics-3.webp",
+        "assets/img/portfolio/portfolio7/agro-robotics-4.webp"
+      ],
+      "info": {
+        "Category": "Robotics / Agro-Industry",
+        "Client": "Anonymous AgroCorp",
+        "Date": "June 2024",
+        "URL": "https://example.com/docs/agro-robotics"
+      },
+      "challenge": "Manual crop harvesting was time-intensive, inconsistent in quality and subject to labor shortages at peak season.",
+      "solution": "We engineered an autonomous robotic harvester with computer vision, precision actuators and path-planning algorithms, enabling 24/7 operation, selective picking and adaptive row navigation.",
+      "results": [
+        "+20% crop yield per hectare",
+        "−40% harvesting labor costs",
+        "99% picking accuracy",
+        "24/7 continuous operation"
+      ],
+      "demos": [
+      ],
+      "overview": "This platform combines on-board AI vision, GPS-guided navigation and wireless telemetry to fully automate crop harvesting with high precision.",
+      "features": [
+        "AI-based crop detection",
+        "Autonomous navigation & obstacle avoidance",
+        "Modular end-effector for selective picking",
+        "Cloud analytics dashboard"
+      ],
+      "applications": [
+        "Fruit & vegetable harvesting",
+        "Field scouting & yield estimation",
+        "Irrigation optimization",
+        "Supply chain traceability"
+      ]
+    },
+    {
+      "id": "iot-blockchain-traceability",
+      "title": "IoT & Blockchain Traceability Solution",
+      "thumb": "assets/img/portfolio/portfolio8/iot-blockchain-1.webp",
+      "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch"],
+      "shortDesc": "End-to-end product tracking achieved 100% compliance and cut losses by 18%.",
+      "subtitle": "Secure supply-chain traceability with IoT sensors & distributed ledger",
+      "images": [
+        "assets/img/portfolio/portfolio8/iot-blockchain-1.webp",
+        "assets/img/portfolio/portfolio8/iot-blockchain-2.webp",
+        "assets/img/portfolio/portfolio8/iot-blockchain-3.webp",
+        "assets/img/portfolio/portfolio8/iot-blockchain-4.webp"
+      ],
+      "info": {
+        "Category": "IoT / Blockchain",
+        "Client": "Anonymous Supply Chain Co.",
+        "Date": "July 2024",
+        "URL": "https://example.com/docs/iot-blockchain-trace"
+      },
+      "challenge": "Lack of transparent provenance led to compliance gaps, counterfeit risk and inventory shrinkage across multiple distribution points.",
+      "solution": "We implemented tamper-proof IoT tags on products, integrated gateway collectors and a blockchain ledger for immutable event logging, coupled with a consumer-facing verification app.",
+      "results": [
+        "100% product provenance visibility",
+        "−18% inventory shrinkage",
+        "+30% compliance audit speed",
+        "15% reduction in counterfeit incidents"
+      ],
+      "demos": [
+      ],
+      "overview": "This end-to-end solution tracks every unit from origin to shelf, using IoT sensors for live updates and blockchain for secure, auditable records.",
+      "features": [
+        "Tamper-evident IoT tagging",
+        "Edge gateways with MQTT",
+        "Permissioned blockchain ledger",
+        "Consumer verification portal"
+      ],
+      "applications": [
+        "Pharmaceutical traceability",
+        "Food supply-chain tracking",
+        "Regulatory compliance",
+        "Anti-counterfeiting"
+      ]
+    },
+    {
+      "id": "logistics-optimization-ai",
+      "title": "Logistics Optimization with AI & Digital Twin",
+      "thumb": "assets/img/portfolio/portfolio9/logistics-ai-1.webp",
+      "categories": ["filter-digital-consulting", "filter-software-dev", "filter-software-arch"],
+      "shortDesc": "Route AI cut delivery times by 25% and reduced transport costs by 18%.",
+      "subtitle": "AI-driven route planning & digital twin for fleet efficiency",
+      "images": [
+        "assets/img/portfolio/portfolio9/logistics-ai-1.webp",
+        "assets/img/portfolio/portfolio9/logistics-ai-2.webp",
+        "assets/img/portfolio/portfolio9/logistics-ai-3.webp",
+        "assets/img/portfolio/portfolio9/logistics-ai-4.webp",
+        "assets/img/portfolio/portfolio9/logistics-ai-5.webp"
+      ],
+      "info": {
+        "Category": "Logistics / AI",
+        "Client": "Anonymous Logistics Co.",
+        "Date": "August 2024",
+        "URL": "https://example.com/docs/logistics-ai"
+      },
+      "challenge": "Static route planning led to suboptimal delivery times, high fuel usage and inability to anticipate traffic or load changes.",
+      "solution": "We built an AI-powered route optimizer coupled with a digital-twin simulation of the fleet, ingesting live traffic, weather and load data to generate optimal schedules and dynamic rerouting.",
+      "results": [
+        "−25% average delivery time",
+        "−18% transport fuel costs",
+        "+22% on-time delivery rate",
+        "Real-time reroute success rate: 95%"
+      ],
+      "demos": [
+      ],
+      "overview": "This solution leverages machine-learning models and a digital twin to adapt logistics operations in real-time, maximizing efficiency and cutting costs.",
+      "features": [
+        "AI-based route optimization",
+        "Digital twin fleet simulation",
+        "Live telemetry ingestion",
+        "Dynamic rerouting engine"
+      ],
+      "applications": [
+        "Last-mile delivery optimization",
+        "Fleet management & monitoring",
+        "Fuel consumption analytics",
+        "Predictive load balancing"
+      ]
+    }
+  ]
+  
+  

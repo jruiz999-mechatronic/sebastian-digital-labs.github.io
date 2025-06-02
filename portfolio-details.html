@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details - Sebastian Digital Labs</title>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/img/favicon.png" rel="icon">
+  <!-- Swiper CSS for carousel -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- GLightbox CSS for lightbox -->
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <!-- Core CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* Ensure slides size to image and center vertically */
+    .portfolio-details-slider .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .portfolio-details-slider .swiper-slide img {
+      max-width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      display: block;
+    }
+  </style>
+</head>
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Portfolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container text-center">
+          <h1 id="detail-title">Loading...</h1>
+          <p id="detail-subtitle"></p>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="current" id="breadcrumb-current">Details</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Projects / Case Studies Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Images Slider -->
+          <div class="col-lg-12">
+            <div class="portfolio-details-slider swiper init-swiper" data-aos="fade-up" data-aos-delay="150">
+              <script type="application/json" class="swiper-config">
+{"loop":true,"speed":600,"autoplay":{"delay":5000},"pagination":{"el":".swiper-pagination","type":"bullets","clickable":true}}
+              </script>
+              <div class="swiper-wrapper">
+                <!-- Slides injected by JS -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <!-- Challenge → Solution → Results -->
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Challenge</h2>
+            <p id="project-challenge"></p>
+
+            <h2>Solution</h2>
+            <p id="project-solution"></p>
+
+            <h2>Results</h2>
+            <ul id="project-results"></ul>
+
+            <!-- Demos / Prototypes -->
+            <div id="demos-section">
+              <h3>Links & Demos</h3>
+              <ul id="project-demos"></ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer" class="footer dark-background"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/js/footer-header.js"></script>
+  
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+  
+
+  <!-- Dynamic Data Loader -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const params   = new URLSearchParams(window.location.search);
+      const id       = params.get('id');
+      const resp     = await fetch('assets/data/portfolio.json');
+      const projects = await resp.json();
+      const project  = projects.find(p => p.id === id);
+      if (!project) {
+        document.getElementById('detail-title').textContent = 'Project Not Found';
+        return;
+      }
+  
+      // Set title, subtitle & breadcrumb
+      document.getElementById('detail-title').textContent      = project.title;
+      document.getElementById('detail-subtitle').textContent   = project.subtitle;
+      document.getElementById('breadcrumb-current').textContent = project.title;
+  
+      // Populate slider
+      const wrapper = document.querySelector('.swiper-wrapper');
+      project.images.forEach(src => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.innerHTML = `<img src="${src}" alt="${project.title}" class="img-fluid">`;
+        wrapper.appendChild(slide);
+      });
+  
+      // Populate Challenge & Solution
+      document.getElementById('project-challenge').textContent = project.challenge;
+      document.getElementById('project-solution').textContent  = project.solution;
+  
+      // Populate Results (KPIs)
+      const resultsUl = document.getElementById('project-results');
+      project.results.forEach(kpi => {
+        const li = document.createElement('li');
+        li.textContent = kpi;
+        resultsUl.appendChild(li);
+      });
+  
+      // Populate Demos
+      const demosSection = document.getElementById('demos-section');
+      if (project.demos && project.demos.length) {
+        const demosUl = document.getElementById('project-demos');
+        project.demos.forEach(d => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${d.url}" target="_blank">${d.label}</a>`;
+          demosUl.appendChild(li);
+        });
+      } else {
+        demosSection.style.display = 'none';
+      }
+  
+      // Initialize Swiper & GLightbox
+      const swiperConfig = JSON.parse(document.querySelector('.swiper-config').textContent);
+      new Swiper('.portfolio-details-slider.swiper', swiperConfig);
+      GLightbox({ selector: '.glightbox' });
+      // Initialize AOS animations for dynamically injected content
+      if (typeof AOS !== 'undefined') {
+        AOS.init();
+        AOS.refresh();
+      }
+    });
+    </script>
+  
+</body>
+</html>
+
+
